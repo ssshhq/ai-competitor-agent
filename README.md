@@ -1,4 +1,4 @@
-# 🔍 竞品分析AI Agent - 智能竞品分析全栈应用
+# 🔍 竞品分析AI Agent - 智能竞品分析
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev)
@@ -6,7 +6,11 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat&logo=tailwindcss)](https://tailwindcss.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-一个基于AI Agent的智能竞品分析工具，通过多步骤工作流自动执行竞品识别、深度分析和报告生成，专为产品经理、创业者和市场分析师设计。
+一个基于AI Agent的竞品分析工具，通过多步骤工作流自动执行竞品识别、深度分析和报告生成，专为产品经理、创业者和市场分析师设计。
+
+**🚀 立即开始你的智能竞品分析之旅！**
+
+输入你的产品名称，让AI Agent为你完成复杂的竞品分析工作，快速获得专业洞察和战略建议。
 
 ## ✨ 在线体验
 
@@ -354,7 +358,3 @@ export async function parallelSearch(queries: string[], maxResults: number = 5) 
 如有问题或建议，可在GitHub Discussions中讨论
 
 ---
-
-**🚀 立即开始你的智能竞品分析之旅！**
-
-输入你的产品名称，让AI Agent为你完成复杂的竞品分析工作，快速获得专业洞察和战略建议。
