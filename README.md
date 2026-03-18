@@ -82,7 +82,6 @@ ai-competitor-agent/
 │   └── layout.tsx                # 根布局
 ├── public/                       # 静态资源
 ├── .env.example                  # 环境变量示例
-├── .env.local                    # 本地环境变量（不提交到Git）
 ├── package.json                  # 依赖包配置
 ├── tailwind.config.ts            # Tailwind配置
 ├── tsconfig.json                 # TypeScript配置
@@ -108,47 +107,19 @@ cd ai-competitor-agent
 ### 2. 安装依赖
 ```bash
 npm install
-# 或
-yarn install
-# 或
-pnpm install
-# 或
-bun install
 ```
 
 ### 3. 配置环境变量
-复制 `.env.example` 为 `.env.local` 并填写你的API密钥：
+复制 `.env.example` 为 `.env.local`
+编辑 `.env.local` 文件，填写你的API密钥
 
-```bash
-cp .env.example .env.local
-```
-
-编辑 `.env.local` 文件：
-```env
-# DeepSeek API配置或其它模型
-DEEPSEEK_API_KEY=your_deepseek_api_key_here
-DEEPSEEK_BASE_URL=https://api.deepseek.com/v1
-DEEPSEEK_MODEL=deepseek-chat
-
-# Tavily搜索API配置
-TAVILY_API_KEY=your_tavily_api_key_here
-
-# 应用配置
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
 
 ### 4. 启动开发服务器
 ```bash
 npm run dev
-# 或
-yarn dev
-# 或
-pnpm dev
-# 或
-bun dev
 ```
 
-应用将在 [http://localhost:3001](http://localhost:3001) 启动。
+应用将在 [http://localhost:3000](http://localhost:3000) 启动。
 
 ### 5. 开始分析
 1. 在输入框中输入产品/公司名称（如：ChatGPT, Notion, Figma）
@@ -173,11 +144,7 @@ bun dev
 #### Vercel部署（推荐）
 1. 将项目推送到GitHub仓库
 2. 在Vercel中导入项目
-3. 配置环境变量：
-   - `DEEPSEEK_API_KEY`
-   - `TAVILY_API_KEY`
-   - `DEEPSEEK_MODEL`（可选）
-   - `DEEPSEEK_BASE_URL`（可选）
+3. 配置环境变量
 4. 部署完成
 
 #### 本地生产构建
