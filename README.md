@@ -1,4 +1,4 @@
-# 🔍 AI竞品分析Agent - 智能竞品分析全栈应用
+# 🔍 竞品分析AI Agent - 智能竞品分析全栈应用
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev)
@@ -7,6 +7,17 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 一个基于AI Agent的智能竞品分析工具，通过多步骤工作流自动执行竞品识别、深度分析和报告生成，专为产品经理、创业者和市场分析师设计。
+
+## ✨ 在线体验
+
+🔗 **[点击访问](https://ai-competitor-agent.vercel.app)**
+
+
+## 📸 产品截图
+![竞品分析-加key](https://github.com/user-attachments/assets/b103a76d-30fc-4eea-9c96-3d6d4825a2c6)
+
+![竞品分析-测试图](https://github.com/user-attachments/assets/b86e3bda-c5ef-4088-ae2d-bde074253f7f)
+
 
 ## 🌟 核心功能
 
@@ -30,7 +41,7 @@
 - **表格和可视化** - 自动生成功能对比表格和格式化内容
 
 ### ⚙️ 灵活的API配置
-- **自定义API支持** - 可配置自己的DeepSeek API Key和模型
+- **自定义API支持** - 可配置自己的API Key和模型
 - **免费额度限制** - 内置使用频率限制（每天1次免费分析）
 - **多用户隔离** - 基于IP地址和API Key的用户标识系统
 
@@ -78,10 +89,12 @@ ai-competitor-agent/
 
 ## 🚀 快速开始
 
+打开 [在线地址] (https://ai-competitor-agent.vercel.app)
+
 ### 环境要求
 - **Node.js** 18+ 或更高版本
 - **npm**、**yarn** 或 **pnpm** 包管理器
-- **DeepSeek API Key**（[申请地址](https://platform.deepseek.com/api_keys)）
+- **DeepSeek API Key**（[申请地址](https://platform.deepseek.com/api_keys)）,或其它模型
 - **Tavily API Key**（[申请地址](https://app.tavily.com/)）
 
 ### 1. 克隆项目
@@ -110,7 +123,7 @@ cp .env.example .env.local
 
 编辑 `.env.local` 文件：
 ```env
-# DeepSeek API配置
+# DeepSeek API配置或其它模型
 DEEPSEEK_API_KEY=your_deepseek_api_key_here
 DEEPSEEK_BASE_URL=https://api.deepseek.com/v1
 DEEPSEEK_MODEL=deepseek-chat
@@ -133,7 +146,7 @@ pnpm dev
 bun dev
 ```
 
-应用将在 [http://localhost:3000](http://localhost:3000) 启动。
+应用将在 [http://localhost:3001](http://localhost:3001) 启动。
 
 ### 5. 开始分析
 1. 在输入框中输入产品/公司名称（如：ChatGPT, Notion, Figma）
@@ -147,8 +160,8 @@ bun dev
 ### API密钥配置
 - **免费使用**：无需配置，每天有1次免费分析额度（基于IP限制）
 - **自定义配置**：点击"使用自己的Model和API Key"展开设置面板
-  - 输入DeepSeek API Key（必填）
-  - 输入Model名称（可选，默认deepseek-chat）
+  - 输入 API Key
+  - 输入Model名称
   - 支持任意兼容OpenAI API格式的模型
 
 ### 部署配置
@@ -335,20 +348,10 @@ export async function parallelSearch(queries: string[], maxResults: number = 5) 
 
 本项目基于 [MIT License](LICENSE) 开源。
 
-## 🙏 致谢
-
-- **DeepSeek** - 提供优秀的国产大模型API
-- **Tavily** - AI优化的搜索API服务
-- **Next.js团队** - 强大的全栈React框架
-- **所有贡献者** - 感谢每一位为项目做出贡献的人
 
 ## 📞 支持与反馈
 
-如有问题或建议，请通过以下方式联系：
-
-1. [提交Issue](https://github.com/your-username/ai-competitor-agent/issues)
-2. 发送邮件至：your-email@example.com
-3. 在GitHub Discussions中讨论
+如有问题或建议，可在GitHub Discussions中讨论
 
 ---
 
