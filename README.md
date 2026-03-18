@@ -20,8 +20,6 @@
 ## 📸 产品截图
 ![竞品分析-加key](https://github.com/user-attachments/assets/b103a76d-30fc-4eea-9c96-3d6d4825a2c6)
 
-![竞品分析-测试图](https://github.com/user-attachments/assets/b86e3bda-c5ef-4088-ae2d-bde074253f7f)
-
 
 ## 🌟 核心功能
 
@@ -93,7 +91,7 @@ ai-competitor-agent/
 
 ## 🚀 快速开始
 
-打开 [在线地址] (https://ai-competitor-agent.vercel.app)
+打开 [在线地址](https://ai-competitor-agent.vercel.app)
 
 ### 环境要求
 - **Node.js** 18+ 或更高版本
@@ -158,6 +156,9 @@ bun dev
 3. 观察6步AI Agent工作流的实时执行进度
 4. 查看最终生成的竞品分析报告
 5. 复制或下载Markdown报告
+
+示例：
+![竞品分析-测试图](https://github.com/user-attachments/assets/b86e3bda-c5ef-4088-ae2d-bde074253f7f)
 
 ## 🔧 配置说明
 
